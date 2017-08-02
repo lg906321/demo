@@ -57,7 +57,7 @@ public class CallUpApi
 	 * @return
 	 */
 	@GetMapping("/{id}")
-	public Mono<ResponseEntity<CallUpDTO>> get(@PathVariable String id)
+	public Mono<ResponseEntity<CallUpDTO>> get(@PathVariable final String id)
 	{
 		log.info("查询通话记录 =====> {}",id);
 
